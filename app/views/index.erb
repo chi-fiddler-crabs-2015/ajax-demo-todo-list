@@ -4,7 +4,7 @@
 
 <ul id="todo-list">
   <% @items.each do |item| %>
-    <li class="item"><%= item.name %></li>
+    <%= erb :item, locals: {item: item} %>
   <% end %>
 </ul>
 
